@@ -2,6 +2,7 @@
 
 import Navbar from "@/components/Navbar";
 import Sidebar from "@/components/Sidebar";
+import StoreProvider from "./redux";
 
 const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
 
@@ -20,7 +21,9 @@ const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
 
 const DashboardWrapper = ({ children }: { children: React.ReactNode }) => {
   return (
-        <DashboardLayout>{children}</DashboardLayout>
+      <StoreProvider>
+          <DashboardLayout> { children } </DashboardLayout>
+      </StoreProvider>
   );
 };
 
