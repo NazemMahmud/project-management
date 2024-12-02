@@ -1,3 +1,5 @@
+This project is a Node.js server application using TypeScript, Prisma, and Express.
+
 # Run Seed
 
 ```shell
